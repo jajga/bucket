@@ -4,6 +4,9 @@ const BucketSchema = mongoose.Schema({
     bucketName: {
     	type : String,
     	unique:true
+    },
+    todoList:{
+        type: Array
     }
 }, {
     timestamps: true

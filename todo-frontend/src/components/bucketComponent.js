@@ -1,62 +1,23 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { createBucket } from '../actions/bucketActions';
+import React from "react";
+//import TodoComponent from './components/todoComponent';
+import BucketForm from './bucketForm';
+import BucketComponent from './bucketList';
 
-class BucketComponent extends Component {
-    constructor(props) {
-        super(props);
-         this.state = {
-             bucket: ''
-         };
-
-        //this.onChange = this.onChange.bind(this);
-        //this.onSubmit = this.onSubmit.bind(this);
-    }
-
-    onChange(e) {
-        this.setState({ [e.target.name]: e.target.value });
-    }
-
-    onSubmit(e) {
-        e.preventDefault();
-
-        const post = {
-            bucket_name : this.state.bucket,
-        };
-
-        this.props.createBucket(post);
-    }
-
-    render() {
-        console.log('this.prprs',this.props);
-
-        return (
-            <div>
-                <h1>Add Bucket</h1>
-
-                <form onSubmit={(event)=>{this.onSubmit(event)}}>
-                    <div>
-                        <label>Bucket Name: </label>
-                        <br />
-                        <input
-                            type="text"
-                            name="bucket"
-                            onChange={(event)=>{this.onChange(event)}}
-                            value={this.state.bucket}
-                        />
+const Bucket = () => {
+    return (
+        <div>
+            <h1 className="display-4 text-primary text-xs-center p-b-1 m-b-1">Todo App </h1>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-10 col-xl-9 mx-auto">
+                            <BucketForm />
+                            <hr></hr>
+                            <BucketComponent />
                     </div>
-
-                    <br />
-                    <button type="submit">Submit</button>
-                </form>
-
+                </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
 
-const mapStateToProps = state => ({
-    buckets: state.buckets.items,
-});
-
-export default connect(mapStateToProps, { createBucket })(BucketComponent);
+export default Bucket;

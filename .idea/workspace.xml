@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc9ffda5-b690-4d99-82ba-c9e9023eceda" name="Default Changelist" comment="" />
+    <list default="true" id="dc9ffda5-b690-4d99-82ba-c9e9023eceda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo-backend/models/todo.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo-frontend/src/components/todoForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo-frontend/src/components/todoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo-frontend/src/templates/todoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-backend/models/bucket.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-backend/models/bucket.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-backend/test/app.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-backend/test/app.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-backend/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-backend/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-backend/verifytoken.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/actions/bucketActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/actions/bucketActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/actions/todoActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/actions/todoActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/components/bucketComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/components/bucketComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/components/todoComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/components/todoComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/reducers/bucketReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/reducers/bucketReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/reducers/todoReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/reducers/todoReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-frontend/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/todo-frontend/webpack.dev.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Tvf1EG30I6LK1uJ6jbd97ZiSXW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/todo-backend" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -45,11 +77,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574345272628</updated>
-      <workItem from="1574345273742" duration="10628000" />
+      <workItem from="1574345273742" duration="24573000" />
+      <workItem from="1574480744618" duration="14444000" />
+      <workItem from="1574506864805" duration="22962000" />
+      <workItem from="1574568023680" duration="13961000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

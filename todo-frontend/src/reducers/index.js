@@ -1,8 +1,12 @@
 import { combineReducers } from "redux";
 import todoReducer from "./todoReducer";
 import bucketReducer from "./bucketReducer";
+import { connectRouter } from 'connected-react-router'
 
-export default combineReducers({
+const createRootReducer = (history) => combineReducers({
+    router: connectRouter(history),
     buckets:bucketReducer,
-    todo:todoReducer
+    todos:todoReducer,
 })
+
+export default createRootReducer;

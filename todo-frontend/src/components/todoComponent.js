@@ -1,67 +1,31 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { createTodo } from '../actions/todoActions';
+import React, { Component} from 'react';
+import TodoForm from "./todoForm";
+import ToDoList from "./todoList";
 
-class TodoComponent extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            title: '',
-            body: ''
-        };
 
-        this.onChange = this.onChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-    }
-
-    onChange(e) {
-        this.setState({ [e.target.name]: e.target.value });
-    }
-
-    onSubmit(e) {
-        e.preventDefault();
-
-        const post = {
-            title: this.state.title,
-            body: this.state.body
-        };
-
-        this.props.createTodo(post);
-    }
-
-    render() {
+class TodoComponent extends Component{
+    render(){
         return (
             <div>
-            <h1>Add Post</h1>
-        <form onSubmit={this.onSubmit}>
-            <div>
-            <label>Title: </label>
-        <br />
-        <input
-        type="text"
-        name="title"
-        onChange={this.onChange}
-        value={this.state.title}
-        />
-        </div>
-        <br />
-        <div>
-        <label>Body: </label>
-        <br />
-        <textarea
-        name="body"
-        onChange={this.onChange}
-        value={this.state.body}
-        />
-        </div>
-        <br />
-        <button type="submit">Submit</button>
-            </form>
+                <h1 className="display-4 text-primary text-xs-center p-b-1 m-b-1">Todo App </h1>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-10 col-xl-9 mx-auto">
+                            <TodoForm bucketParams={this.props.match}/>
+                            <hr></hr>
+                            <ToDoList bucketParams={this.props.match}/>
+                        </div>
+                    </div>
+                </div>
             </div>
-    );
+
+        );
     }
+
 }
 
+export default  TodoComponent;
+//export default connect(mapStateToProps, {  })(TodoComponent);
 
 
-export default connect(null, { createTodo })(TodoComponent);
+

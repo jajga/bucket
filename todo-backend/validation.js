@@ -5,27 +5,23 @@ const Joi = require('@hapi/joi');
 const bucketValidation =  (data) => {
 
 	const bucketSchema = Joi.object({
-		bucketName : Joi.string().min(6).required()
+		bucketName : Joi.string().min(2).required()
 	})
 
 	return bucketSchema.validate(data);
 }
 
-	
+const todoValidation =  (data) => {
 
-
-//Login Validation of user 
-
-const loginValidation =  (data) => {
-
-	const loginSchema = Joi.object({
-		userid : Joi.string().min(6).required(),
-		password : Joi.string().min(6).required()				
+	const bucketSchema = Joi.object({
+		bucketId : Joi.string().min(2).required(),
+		todoTitle : Joi.string().min(2).required(),
+		todoStatus : Joi.number()
 	})
 
-	return loginSchema.validate(data);
+	return bucketSchema.validate(data);
 }
 
 
 module.exports.bucketValidation =  bucketValidation;
-module.exports.loginValidation =  loginValidation;	
+module.exports.todoValidation = todoValidation;
